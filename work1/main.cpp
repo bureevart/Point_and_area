@@ -47,7 +47,7 @@ inline double getLine(Point p1, Point p2) {
 
 inline double getArea(double a, double b, double c) {
     double halfP = (a + b + c) / 2;
-    return 0.5 * sqrt(halfP * (halfP - a) * (halfP - b) * (halfP - c));
+    return sqrt(halfP * (halfP - a) * (halfP - b) * (halfP - c));
 }
 
 int Point::value = 0;
